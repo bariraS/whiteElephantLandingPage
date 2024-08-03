@@ -10,7 +10,7 @@ const ELogo = () => {
   const ref = useRef();
 
   useFrame(() => {
-    ref.current.rotation.y += 0.01; // Adjust the speed of rotation
+    ref.current.rotation.y += 0.05; // Adjust the speed of rotation
   });
 
   scene.traverse((child) => {

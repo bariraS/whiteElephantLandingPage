@@ -145,9 +145,9 @@ function HexTunnel() {
         <sphereGeometry args={[0.5, 16, 16]} />
         <meshStandardMaterial color="#230B5A" emissive="#230B5A" emissiveIntensity={20}   />
       </mesh>
-      <EffectComposer multisampling={2}>
+      {/* <EffectComposer multisampling={2}>
         <Bloom intensity={3} luminanceThreshold={5} luminanceSmoothing={0.9} />
-      </EffectComposer>
+      </EffectComposer> */}
     </group>
   );
 }
