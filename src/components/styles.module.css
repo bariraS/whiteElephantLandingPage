@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    width: 100vw;
+    background-color: #0e172c;
+    color: white;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+    padding: 0px 40px;
+    z-index: 10;
+    position: fixed;
+  }
+  
+
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .navLinks a:hover {
+    color: #bf00ff;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    transform: scale(1.1);
+  }
+  
+  .navExtras {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px 10px;
+  }
+
+  .navbar a{
+    transition: all 0.3s;
+
+  }
+  
+  .navExtras a:hover{
+    margin-top: 10px;
+  }
+
+
+  @media (max-width: 918px) {
+    .menuToggle {
+      display: block;
+    }
+  
+    .navLinks {
+      position: fixed;
+      flex-direction: column;
+      background-color: #0e172c;
+      top: 0;
+      right: 0;
+      left: 0;
+      transform: translateY(-100%);
+      padding: 20px;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+    }
+
+  
+    .showNav {
+      transform: translateY(0);
+      display: flex;
+    }
+  }
+  
+  
+  .buttonOs {
+   
+    border: none;
+    border-radius: 15px;
+    background-color: #0e172c;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.buttonOs a{
+      font-size: 20px;
+
+  }
+  
+  .buttonOs:hover {
+    background-color: #bf00ff;
+    transform: translateY(-2px);
+    letter-spacing: 1px;
+  }
+  
+  .buttonLink {
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo{
+    z-index: 20 !important;
+  }

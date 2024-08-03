@@ -1,0 +1,12 @@
+/* src/index.css */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
